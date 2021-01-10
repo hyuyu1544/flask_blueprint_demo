@@ -17,3 +17,30 @@ An Demo for flask blueprint.
 http://127.0.0.1:5000/blueprint1/blueprint1_api
 http://127.0.0.1:5000/blueprint2/blueprint2_api
 ```
+
+## The Tree
+```
+flask_blueprint_demo
+├── README.md
+├── requirements.txt
+└── server
+    ├── __init__.py
+    ├── __main__.py
+    ├── app.py
+    ├── blueprint1
+    │   ├── __init__.py
+    │   └── view
+    │       ├── __init__.py
+    │       └── blueprint1_api.py
+    └── blueprint2
+        ├── __init__.py
+        └── view
+            ├── __init__.py
+            └── blueprint2_api.py
+```
+
+#### app.py
+The main application is defination here. Developer can add many blueprint here by using `register_blueprint`, and using `url_prefix` to setting blueprint prefix url.
+
+#### blueprint1/__init__.py
+Blueprint route here. 
