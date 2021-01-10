@@ -1,4 +1,4 @@
-# flask_blueprint_demo
+# Flask Blueprint Demo
 An Demo for flask blueprint. 
 
 
